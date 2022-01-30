@@ -1,0 +1,38 @@
+{
+    "cookies":{
+        "file":"cookies.txt",
+        "upc":true
+    },
+
+    "proxies":{
+        "file":"proxies.txt",
+        "type":"http"
+    },
+
+    "settings":[
+        {
+            "cookie_gen":{
+                "output":"generated_cookies.txt",
+                "upc":true,
+                "proxies":false,
+                "browser":"chrome"
+            },
+
+            "cookie_checker":{
+                "output":"checked_cookies.txt"
+            },
+
+            "proxy_checker":{
+                "output":"checked_proxies.txt"
+            },
+
+            "follow_bot":{
+                "proxies":true
+            },
+
+            "group_join_bot":{
+                "proxies":true
+            }
+        }
+    ]
+}
