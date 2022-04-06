@@ -171,7 +171,7 @@ def signup_roblox(captchaId, captcha_token):
 
 def solve_captcha(token, captchaId, captchaBlob):
     browser = config['settings'][0]['cookie_gen']['browser']
-    driver = autoselenium.Driver(browser)    
+    driver = autoselenium.Firefox(headless=False)
     location = token.split('|')[1]
     token_id = token.split('|')[0]
     solver_url = f'https://roblox-api.arkoselabs.com/fc/gc/?token={token_id}&{location}&lang=en&pk=A2A14B1D-1AF3-C791-9BBC-EE33CC7A0A6F&cdn_url=https%3A%2F%2Froblox-api.arkoselabs.com%2Fcdn%2Ffc'
